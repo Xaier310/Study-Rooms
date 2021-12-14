@@ -1,0 +1,18 @@
+.header{
+    color: slateblue;
+}
+.chats{
+    width: 300px;
+    height: 200px;
+    overflow-y: auto;
+    border: solid 1px slateblue;
+    overflow-wrap: break-word;
+}
+.other{
+    /* display: inline-block; */
+    background-color:red;
+}
+.my{
+    /* display: inline-block; */
+    background-color: green;
+}
