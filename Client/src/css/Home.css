@@ -4,9 +4,9 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: #000000;
-  font-family: 'Baloo Bhaijaan 2', cursive;
+  font-family: "Baloo Bhaijaan 2", cursive;
 }
 
 html {
@@ -14,7 +14,8 @@ html {
   height: 100%;
 }
 
-body, #root {
+body,
+#root {
   height: 100%;
 }
 
@@ -40,11 +41,11 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .Home .navbar-child-1 {
@@ -52,38 +53,38 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .Home .navbar-child-2 {
   -webkit-box-flex: 1.2;
-      -ms-flex: 1.2;
-          flex: 1.2;
+  -ms-flex: 1.2;
+  flex: 1.2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
 }
 
 .Home .navbar-logo {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .Home .navbar-logo-text {
@@ -96,16 +97,22 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#9A0680), to(#4C3F91));
-  background-image: linear-gradient(to top right, #9A0680, #4C3F91);
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    from(#9a0680),
+    to(#4c3f91)
+  );
+  background-image: linear-gradient(to top right, #9a0680, #4c3f91);
   margin-right: 4px;
 }
 
@@ -114,10 +121,10 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 2.2;
-      -ms-flex: 2.2;
-          flex: 2.2;
+  -ms-flex: 2.2;
+  flex: 2.2;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .Home .navbar-item-cc {
@@ -125,8 +132,8 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-weight: 700;
 }
 
@@ -145,8 +152,8 @@ body, #root {
 }
 
 .Home .navbar-button {
-  color: #9A0680;
-  border: solid 1px #B958A5;
+  color: #9a0680;
+  border: solid 1px #b958a5;
   background-color: #fff;
   font-size: 1.5rem;
   font-weight: 900;
@@ -177,18 +184,18 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
   height: 100%;
   width: 100%;
   left: -100%;
   top: 0;
   border-radius: 5rem;
-  background-color: #9A0680;
+  background-color: #9a0680;
   z-index: -1;
 }
 
@@ -197,19 +204,19 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 10rem;
   margin-left: 0;
 }
 
 .Home .main-part-1-left {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .Home .main-part-1-left-heading {
@@ -232,8 +239,8 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .Home .main-part-1-left-buttons-button-cc {
@@ -246,18 +253,22 @@ body, #root {
 .Home .main-part-1-left-buttons-button-1 {
   padding: 1rem 3rem;
   margin-right: 2rem;
-  background-color: #9A0680;
+  background-color: #9a0680;
   color: #fff;
   border: none;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-          box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .Home .main-part-1-left-buttons-button-1:hover {
   -webkit-transition: all linear 300ms;
   transition: all linear 300ms;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .Home .main-part-1-left-buttons-button-1 i {
@@ -269,13 +280,13 @@ body, #root {
   padding: 0.9rem 2.9rem;
   margin-right: 2rem;
   background-color: #fff;
-  color: #9A0680;
-  border: solid 1px #9A0680;
+  color: #9a0680;
+  border: solid 1px #9a0680;
 }
 
 .Home .main-part-1-left-buttons-button-2:hover {
   color: #fff;
-  background-color: #9A0680;
+  background-color: #9a0680;
   -webkit-transition: all linear 300ms;
   transition: all linear 300ms;
 }
@@ -285,14 +296,14 @@ body, #root {
 }
 
 .Home .main-part-1-left-buttons-button-2 i {
-  color: #9A0680;
+  color: #9a0680;
   margin-right: 0.3rem;
 }
 
 .Home .main-part-1-right {
   -webkit-box-flex: 1.2;
-      -ms-flex: 1.2;
-          flex: 1.2;
+  -ms-flex: 1.2;
+  flex: 1.2;
 }
 
 .Home .main-part-1-right-image {
@@ -304,11 +315,11 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .Home .main-part-2-left {
@@ -339,12 +350,31 @@ body, #root {
   font-weight: 500;
   margin: 2rem 0 4rem;
 }
-
+@media screen and (max-width: 1010px) {
+  .Home .main-part-2-left-img {
+    height: 40rem;
+    width: 40rem;
+  }
+  /* .Home .main-part-1 {
+    flex-wrap: wrap;
+  } */
+}
+@media screen and (max-width: 789px) {
+  .Home .main-part-2-left-img {
+    height: 30rem;
+    width: 30rem;
+  }
+}
+@media screen and (max-width: 940px) {
+  .Home .main-part-2 {
+    flex-wrap: wrap;
+  }
+}
 .Home .main-part-2-right-cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  -ms-grid-columns: (minmax(20rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 2rem;
   cursor: pointer;
 }
@@ -355,17 +385,17 @@ body, #root {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 1rem;
   height: 20rem;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   border-radius: 1rem;
   position: relative;
   overflow: hidden;
@@ -377,19 +407,19 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   font-size: 2.2rem;
 }
 
 .Home .main-part-2-right-cards-card-cc-heading-cc i {
   -webkit-box-flex: 1.9;
-      -ms-flex: 1.9;
-          flex: 1.9;
+  -ms-flex: 1.9;
+  flex: 1.9;
   font-size: 5rem;
   color: #191919;
 }
@@ -397,14 +427,14 @@ body, #root {
 .Home .main-part-2-right-cards-card-cc-heading-cc span {
   color: #191919;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .Home .main-part-2-right-cards-card-cc-button-cc {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
   font-size: 1.3rem;
   border-radius: 0.8rem;
   font-weight: 700;
@@ -426,7 +456,7 @@ body, #root {
   content: "";
   position: absolute;
   -webkit-transform: rotateZ(25deg);
-          transform: rotateZ(25deg);
+  transform: rotateZ(25deg);
   width: 100%;
   top: 0;
   left: 0;
@@ -443,8 +473,10 @@ body, #root {
 .Home .main-part-2-right-cards-card-cc:hover {
   -webkit-transition: all linear 300ms;
   transition: all linear 300ms;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .Home .main-part-2-right-cards-card-cc:hover h1 i {
@@ -465,7 +497,7 @@ body, #root {
 
 .Home .main-part-2-right-cards-card-cc:hover::before {
   -webkit-transform: rotateZ(0deg);
-          transform: rotateZ(0deg);
+  transform: rotateZ(0deg);
   opacity: 1;
 }
 
@@ -481,11 +513,11 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .Home .no-of-rooms-row {
@@ -493,15 +525,15 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 50rem;
   position: relative;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 2.5rem;
   border-radius: 4rem;
   background-color: white;
@@ -519,11 +551,11 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0.5rem;
   font-size: 1.5rem;
   font-weight: 700;
@@ -559,8 +591,8 @@ body, #root {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .Chat ::-webkit-scrollbar {
@@ -572,7 +604,7 @@ body, #root {
 }
 
 .Chat ::-webkit-scrollbar-thumb {
-  background: #DCDCDC;
+  background: #dcdcdc;
 }
 
 .Chat ::-webkit-scrollbar-thumb:hover {
@@ -592,11 +624,11 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .Chat .navbar-child-1 {
@@ -604,38 +636,38 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .Chat .navbar-child-2 {
   -webkit-box-flex: 1.2;
-      -ms-flex: 1.2;
-          flex: 1.2;
+  -ms-flex: 1.2;
+  flex: 1.2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
 }
 
 .Chat .navbar-logo {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .Chat .navbar-logo-text {
@@ -648,16 +680,22 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#9A0680), to(#4C3F91));
-  background-image: linear-gradient(to top right, #9A0680, #4C3F91);
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    from(#9a0680),
+    to(#4c3f91)
+  );
+  background-image: linear-gradient(to top right, #9a0680, #4c3f91);
   margin-right: 4px;
 }
 
@@ -666,10 +704,10 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 2.2;
-      -ms-flex: 2.2;
-          flex: 2.2;
+  -ms-flex: 2.2;
+  flex: 2.2;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .Chat .navbar-item-cc {
@@ -677,8 +715,8 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-weight: 700;
 }
 
@@ -697,8 +735,8 @@ body, #root {
 }
 
 .Chat .navbar-button {
-  color: #9A0680;
-  border: solid 1px #B958A5;
+  color: #9a0680;
+  border: solid 1px #b958a5;
   background-color: #fff;
   font-size: 1.5rem;
   font-weight: 900;
@@ -729,18 +767,18 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
   height: 100%;
   width: 100%;
   left: -100%;
   top: 0;
   border-radius: 5rem;
-  background-color: #9A0680;
+  background-color: #9a0680;
   z-index: -1;
 }
 
@@ -753,8 +791,8 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .Chat .main-part-left {
@@ -763,31 +801,44 @@ body, #root {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   overflow-y: auto;
   overflow-x: hidden;
   height: 100%;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .Chat .main-part-left-profile {
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
   -webkit-box-flex: 0;
-      -ms-flex: 0;
-          flex: 0;
+  -ms-flex: 0;
+  flex: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1rem;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 1.5rem;
 }
-
+.Chat .room-name {
+  background-color: #f38585;
+  -webkit-box-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
 .Chat .main-part-left-profile-img {
   height: 5rem;
   width: 5rem;
@@ -827,8 +878,8 @@ body, #root {
 
 .Chat .main-part-left-participants {
   -webkit-box-flex: 15;
-      -ms-flex: 15;
-          flex: 15;
+  -ms-flex: 15;
+  flex: 15;
 }
 
 .Chat .main-part-left-participants-participant-cc {
@@ -837,8 +888,8 @@ body, #root {
   display: flex;
   padding: 1rem;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 1.5rem;
 }
 
@@ -853,7 +904,7 @@ body, #root {
 }
 
 .Chat .main-part-left-participants-participant-cc:hover {
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
 }
 
 .Chat .main-part-right {
@@ -863,14 +914,14 @@ body, #root {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+  -ms-flex: 3;
+  flex: 3;
 }
 
 .Chat .main-part-right-dm-p {
@@ -878,8 +929,8 @@ body, #root {
   background-repeat: repeat;
   background-attachment: fixed;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   width: 100%;
   overflow: auto;
   padding: 0 3rem;
@@ -897,19 +948,19 @@ body, #root {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 1rem 5rem 1rem 1rem;
   margin: 0.2rem;
   -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+  flex-basis: 60%;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   word-wrap: break-word;
   position: relative;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   background-color: white;
   border-radius: 1rem;
 }
@@ -935,12 +986,12 @@ body, #root {
 
 .Chat .main-part-right-dm-p .main-part-right-dm span {
   -webkit-box-flex: 0;
-      -ms-flex: 0;
-          flex: 0;
+  -ms-flex: 0;
+  flex: 0;
 }
 
 .Chat .main-part-right-msgbox {
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -959,11 +1010,11 @@ body, #root {
   cursor: pointer;
   color: grey;
   border: none;
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
 }
 
 .Chat .main-part-right-msgbox-file input:active {
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
   border: none;
   outline: none;
 }
@@ -973,21 +1024,24 @@ body, #root {
   content: "\f1ea";
   font-size: 2rem;
   position: absolute;
+  z-index: 23;
   left: 0;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-  background-color: #DCDCDC;
-  border: 2px solid #DCDCDC;
+  background-color: #dcdcdc;
+  border: 2px solid #dcdcdc;
+  background: #dcdcdc
+    url("https://img.icons8.com/ios-glyphs/50/000000/file.png") no-repeat center;
 }
 
 .Chat .main-part-right-msgbox-typemsg {
@@ -995,19 +1049,19 @@ body, #root {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0 0.5rem;
   height: 4rem;
   border-radius: 5rem;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   font-size: 1.5rem;
   border: none;
   padding: 0 1rem;
@@ -1040,18 +1094,18 @@ body, #root {
   display: flex;
   cursor: pointer;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .Chat .main-part-right-msgbox-sendbutton i {
   color: grey;
   font-size: 2rem;
   -webkit-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
 }
 
 .myMsg {
@@ -1059,3 +1113,6 @@ body, #root {
   background-color: #daf3c4 !important;
 }
 /*# sourceMappingURL=Home.css.map */
+#output {
+  width: 100px;
+}

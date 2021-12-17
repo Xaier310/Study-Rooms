@@ -1,0 +1,111 @@
+.footer-wrapper {
+  background-color: rgb(143, 253, 226);
+  border-radius: 1rem;
+  /* height: 300px; */
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  margin: 2em 0;
+  padding: 2em;
+  position: relative;
+}
+
+.footer-wrapper h1 {
+  /* border-bottom: solid 0.2em; */
+  margin-bottom: 0.3em;
+}
+.r1 {
+  display: flex;
+  /* grid-template-columns: repeat(2, 1fr); */
+  gap: 2em;
+  flex-wrap: wrap;
+  grid-area: 1/1 / span 4 / span 4;
+}
+.r2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 5/1 / span 1 / span 4;
+}
+.r2 p {
+  font-weight: 600;
+}
+.r1 {
+  align-items: baseline;
+}
+.contactus-footer {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+form {
+  display: grid;
+  grid-template-row: repeat(3, 1fr);
+}
+.links {
+  flex: 1;
+}
+.links ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+  justify-content: space-between;
+}
+.links li {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  font-size: 1.7em;
+  letter-spacing: 0.05em;
+  line-height: 2em;
+}
+
+.username {
+  font-weight: bold;
+  width: 200px;
+  margin: 0 0 20px;
+  height: 35px;
+  padding: 6px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #f6f7f9;
+  color: #748194;
+  font-size: 14px;
+}
+textarea {
+  width: 60vw !important;
+  height: 5em !important;
+  grid-area: 3/1 / span 4 / span 1;
+}
+
+.btn {
+  font-weight: bold;
+  width: 230px;
+  margin: 0 0 20px;
+  height: 45px;
+  padding: 6px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #ee9ba3;
+  color: white;
+  font-size: 14px;
+}
+.signup1 {
+  color: #748194;
+  font-size: 30px;
+  text-align: center;
+}
+@media screen and(max-width: 710px) {
+  .footer-wrapper {
+    padding: 1em !important;
+  }
+}
+.footer-wrapper h1:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  /* margin: 0 auto; This will center the border. */
+  width: 50%; /* Change this to whatever width you want. */
+  padding-top: 20px; /* This creates some space between the element and the border. */
+  border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
+}
