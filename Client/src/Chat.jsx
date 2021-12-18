@@ -1,5 +1,5 @@
 import React, { Component, useContext, useEffect, useState } from 'react';
-import "./Chat.css";
+import "./css/Chat.css";
 import {AppContext} from "./App"
 import axios from "axios"
 
