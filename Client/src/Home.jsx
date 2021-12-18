@@ -170,7 +170,6 @@ const Home = () => {
           </section>
         </main>
         <footer className="footer"></footer>
-        <Footer></Footer>
         <script>
           <link
             rel="stylesheet"
@@ -178,6 +177,7 @@ const Home = () => {
           />
         </script>
       </div>
+      <Footer></Footer>
     </>
   );
 };

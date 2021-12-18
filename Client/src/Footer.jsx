@@ -25,8 +25,9 @@ export default function Footer() {
               type="text"
               placeholder="Name*"
               class="username"
+              id="input"
             />
-            <textarea type="text" placeholder="Message" class="username" />
+            <textarea id="input" type="text" placeholder="Message" />
 
             <button class="btn">Sign Up</button>
           </form>
