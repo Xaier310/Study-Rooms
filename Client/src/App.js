@@ -81,9 +81,9 @@ function App() {
     user && setCurUser(user);
     // console.log(user);
   }, [user]);
-
+  const PORT = process.env.PORT || 3001;
   useEffect(() => {
-    setSocket(io("http://localhost:3001"));
+    setSocket(io(`http://localhost:${PORT}`));
   }, []);
 
   return (
