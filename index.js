@@ -15,8 +15,8 @@ app.use(express.json());
 app.use(express.static(__dirname + "/public"));
 const { instrument } = require("@socket.io/admin-ui");
 mongoose.connect(
-  // `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@seniorcircle.z5ejt.mongodb.net/ChatBot`,
-  `mongodb://localhost:27017/ChatBot`,
+  `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@seniorcircle.z5ejt.mongodb.net/ChatBot`,
+  // `mongodb://localhost:27017/ChatBot`,
   (err) => {
     if (err) throw err;
     console.log("DB Connected Successfully");
