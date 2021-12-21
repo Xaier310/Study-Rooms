@@ -29,7 +29,7 @@ export default function Footer() {
             />
             <textarea id="input" type="text" placeholder="Message" />
 
-            <button class="btn">Sign Up</button>
+            <button class="btn">Send Message</button>
           </form>
         </div>
       </div>

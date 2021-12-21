@@ -225,15 +225,17 @@ const Home = () => {
           <section className="main-part-1">
             <div className="main-part-1-left">
               <h1 className="main-part-1-left-heading">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-                tenetur.
+                You will never study alone again.
               </h1>
               <p className="main-part-1-left-para">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
-                fuga sunt expedita officia doloribus ut repudiandae corporis
-                porro, tempora optio maiores sint sequi ducimus nam molestiae
-                eveniet ullam modi reiciendis tempore labore exercitationem
-                itaque repellat necessitatibus asperiores?
+                Join the largest global student community online and say goodbye
+                to lack of motivation. Create your own Room and share room-Id
+                with others or join a already created room.
+                <br />
+                <br />
+                Joining a virtual study room is just like attending a Video
+                Call, where instead of talking all the participants on the call
+                are studying and motivating each other to do the same.
               </p>
               <div className="main-part-1-left-buttons">
                 <button
@@ -326,14 +328,13 @@ const Home = () => {
                 </div>
               )}
               <h1 className="main-part-2-right-heading">
-                Lorem ipsum dolor sit amet.
+                Want to have focus on special topics ??
               </h1>
               <p className="main-part-2-right-para">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
-                fuga sunt expedita officia doloribus ut repudiandae corporis
-                porro, tempora optio maiores sint sequi ducimus nam molestiae
-                eveniet ullam modi reiciendis tempore labore exercitationem
-                itaque repellat necessitatibus asperiores?
+                Don't worry. We have pre-built rooms for different topics - Web
+                development, App development, Machine Learning. Choose different
+                rooms on the basis of how many participants are active. All
+                rooms are limited to 15 participants to increase interaction
               </p>
               <div className="main-part-2-right-cards">
                 <div className="main-part-2-right-cards-card-1 main-part-2-right-cards-card-cc">

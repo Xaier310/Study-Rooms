@@ -2,7 +2,9 @@
   position: relative;
   top: 20vh;
   left: 7vw;
-  background-color: rgb(143, 253, 226);
+  /* background-color: rgb(143, 253, 226); */
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
   border-radius: 1rem;
   /* height: 300px; */
   display: grid;
@@ -12,12 +14,14 @@
   width: 80%;
   display: flex;
   flex-direction: column;
+
   /* position: relative; */
 }
 
 .footer-wrapper h1 {
   /* border-bottom: solid 0.2em; */
   margin-bottom: 0.3em;
+  color: #fff !important;
 }
 .r1 {
   display: flex;
@@ -25,6 +29,9 @@
   gap: 2em;
   flex-wrap: wrap;
   grid-area: 1/1 / span 4 / span 4;
+}
+.r1 h3 {
+  color: #fff !important;
 }
 .r2 {
   display: flex;
@@ -34,9 +41,11 @@
 }
 .r2 p {
   font-weight: 600;
+  color: #fff !important;
 }
 .r1 {
   align-items: baseline;
+  color: #fff !important;
 }
 .contactus-footer {
   display: flex;
@@ -64,13 +73,14 @@ form {
   font-size: 1.7em;
   letter-spacing: 0.05em;
   line-height: 2em;
+  color: #fff !important;
 }
 
 .username {
   font-weight: bold;
-  width: 12.5rem;
+  width: 15.5rem;
   margin: 0 0 1.25rem;
-  height: 2.188rem;
+  height: 3.188rem;
   padding: 0.375rem 0.938rem;
   border-radius: 0.313rem;
   outline: none;
@@ -98,6 +108,7 @@ textarea {
   width: 80%;
   height: 5rem !important;
   grid-area: 3/1 / span 4 / span 1;
+  resize: none;
 }
 
 .btn {
@@ -131,5 +142,5 @@ textarea {
   /* margin: 0 auto; This will center the border. */
   width: 50%; /* Change this to whatever width you want. */
   padding-top: 10px; /* This creates some space between the element and the border. */
-  border-bottom: 2px solid black; /* This creates the border. Replace black with whatever color you want. */
+  border-bottom: 2px solid #fff; /* This creates the border. Replace black with whatever color you want. */
 }
