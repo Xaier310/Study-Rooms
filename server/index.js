@@ -38,7 +38,11 @@ function randomStr() {
 
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000", "https://admin.socket.io/"],
+    origin: [
+      "http://localhost:3000",
+      "https://admin.socket.io/",
+      "https://tender-nightingale-5fc1df.netlify.app/",
+    ],
     methods: ["GET", "POST"],
   },
 });
