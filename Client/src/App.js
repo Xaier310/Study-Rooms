@@ -84,7 +84,11 @@ function App() {
   // const PORT = process.env.PORT || 3001;
   useEffect(() => {
     // setSocket(io(`http://localhost:3001`));
-    setSocket(io("https://react-studyroom.herokuapp.com/"));
+    setSocket(
+      io("https://react-studyroom.herokuapp.com/", {
+        transports: ["websocket"],
+      })
+    );
   }, []);
 
   return (
