@@ -4,23 +4,28 @@ import Navbar from "./Navbar";
 import "./css/Home.css";
 export default function About() {
   return (
+    <div className="About-page">
+  <div className="Home">
+    <Navbar />
     <div
-      className="Home"
+      className="About"
       style={{
         backggroundImage: "none",
-        paddingLeft: "0.5em",
-        paddingRight: "0.5em",
-        margin: "0.5em",
+        paddingLeft: "1em",
+        paddingRight: "1em",
       }}
     >
-      <Navbar />
       <h1 className="about-heading">About Us</h1>
-      <p className="about-para">
+      <p id="set-footer-in-about" className="about-para">
         Developed by Pradeep and Amit, students of Delhi Technological
         University, Study Rooms aims at bringing various people of similar
         interests together to form a global community.
       </p>
+      <div id="about-footer">
       <Footer />
+      </div>
+    </div>
+  </div>
     </div>
   );
 }

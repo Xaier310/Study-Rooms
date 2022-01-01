@@ -1,160 +1,4 @@
-//normal text
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Roboto:wght@300&display=swap');
-
-$first-color:#9A0680;
-$text-first-color:#000000;
-$cards-first-color:#485461;
-$cards-second-color:#191919;
-$gradient-first-color: #B958A5;
-$gradient-second-color: #4C3F91;
-$text-second-color:grey;
-$transition: all linear 300ms;
-$sendMessageInputColor:#DCDCDC;
-$what-app-color:#daf3c4;
-$popup-bg:rgba(0,0,0,0.5);
-
-@mixin modernScrollbar(){
-    ::-webkit-scrollbar {
-        width: 10px;
-      }
-      /* Track */
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
-      }    
-      /* Handle */
-      ::-webkit-scrollbar-thumb {
-        background: $sendMessageInputColor; 
-      }
-      /* Handle on hover */
-      ::-webkit-scrollbar-thumb:hover {
-        background: #888; 
-      }
-}
-
-@mixin NAVBAR(){
-    .navbar{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    
-        &-child-1{
-            display: flex;
-            justify-content: space-between;
-            flex: 1;
-            align-items: center;
-        }
-        &-child-2{
-            flex: 1.2;
-            display: flex;
-            justify-content: end;
-        }
-        &-logo{
-            cursor: pointer;
-            flex:1;
-            display: flex;
-            align-items: center;
-            &-text{
-                color:$text-first-color;
-                font-size: 2.5rem;
-                cursor: pointer;
-            }
-            &-dot{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 2rem; 
-                width: 2rem;
-                border-radius: 50%;
-                background-image: linear-gradient(to top right, $first-color, $gradient-second-color);
-                margin-right: 4px;
-            }
-        }
-    
-        &-items{
-            display: flex;
-            flex: 2.2;
-            justify-content: space-around;
-        }
-    
-        &-item-cc{
-        display: flex;
-        align-items: center;
-        font-weight: 700;
-         a{  
-             font-size: 1.5rem;
-             padding: 0.5rem;
-             color: $text-second-color;
-             cursor: pointer;
-             &:hover{
-                 padding: 0rem;
-                 color:$text-first-color;
-                 transition: $transition;
-                 font-size: 1.8rem;
-             }
-         }
-        }
-    
-        &-button{
-            // display: flex;
-            color: $first-color;
-            border: solid 1px $gradient-first-color;
-            background-color: #fff;
-            font-size: 1.5rem;
-            font-weight: 900;
-            padding: 0.7rem 1.5rem;
-            border-radius: 5rem;
-            position: relative;
-            transition: $transition;
-            z-index: 1;
-            overflow: hidden;
-            cursor: pointer;
-            &:hover{
-                &::before{
-                    left: 0;
-                    // opacity: 1;
-                    transition: $transition;
-                }
-                color: white;
-                border: none;
-            }
-            &::before{
-                content: "";
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                left: -100%;
-                top: 0;
-                border-radius: 5rem;
-                 // background-image: linear-gradient(to top right, $first-color, $gradient-first-color);
-                 background-color: $first-color;
-                // opacity: 0;
-                z-index: -1;
-            }
-        }
-    }
-}
-@mixin BasicProp(){
-    li{
-        list-style: none;
-    }    
-    a{
-        text-decoration: none;
-        color: $text-first-color;
-    }
-    padding:2rem 6rem 0;
-}
-
-
-html{
-    scroll-behavior: smooth;
-}
-
-
-
-
+@import "./variables_and_Function";
 
 
 
@@ -168,6 +12,7 @@ html{
 html{
     font-size: 62.5%;
     height:100%;
+    scroll-behavior: smooth;
 }
 body,#root{
     height: 100%;
@@ -176,11 +21,13 @@ body,#root{
 .Home{
     @include BasicProp();
     @include NAVBAR();
-    background-image: url("../images/2.jpg");
-    background-repeat: no-repeat;
+    position: relative;
+    // background-image: url("../images/2.jpg");
+    // background-repeat: no-repeat;
     // background-attachment: fixed;
-    background-position: 100% 5%;
-    background-size:68rem 68rem;
+    // background-position: 100% 5%;
+    // background-size:68rem 68rem;
+    // background-size:6rem 6rem;
 
     // {
     //    if you want make  it  with putting an html tag of image so comment the above part from background-image to background-position than go and delete margin-bottom of .main-part-1 and margin-top(near 152 line number) from .main-part-1-left then just uncomment  the  html of image in Home.jsk 
@@ -194,7 +41,7 @@ body,#root{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin:10rem;
+    margin:5rem 0;
     margin-left: 0; 
     // margin-bottom: 18rem;
     &-left{
@@ -213,6 +60,9 @@ body,#root{
             margin-top: 0.5rem;
             font-weight: 500;
         } 
+        .alert{
+            height: 2rem;
+        }
         &-buttons{
             display: flex;
             align-items: center;
@@ -265,44 +115,49 @@ body,#root{
     flex: 1.2;
      &-image{
          float: right;
+         width: 100%;
+         max-width: 68rem;
      }
     }
   }
 &-part-2{
+margin-top: 18rem;
+margin-bottom: 10rem;
 display: flex;
 justify-content: space-between;
 align-items: center;
-&-left{
-  position: relative;
-  z-index: 1;
-   &-img{
+   .main-part-2-left-img{
      float: left;
      position: relative;
      z-index: -100;
-     height: 60rem;
-     width: 60rem;
+     width:  60%;   
+     max-width: 50rem;
+     padding: 5rem;
+     transform: translateY(-34px);
    }
-}
 &-right{
     &-heading{
         font-size: 5rem;
         line-height: 1.2;
+        // width: 100%;
     }
     &-para{
         line-height: 1.5;
         font-size: 1.5rem;
         color: $text-second-color;
         word-wrap: break-word;
-        margin-bottom: 2rem;
-        margin-top: 0.5rem;
         font-weight: 500;
         margin: 2rem 0 4rem;
+        // display: block;
+        // width: 100%;
     }
+
     &-cards{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
         grid-gap: 2rem;
         cursor: pointer;
+        margin-top: 4rem;
       &-card-cc{
           display: flex;
           flex-direction: column;
@@ -520,6 +375,7 @@ align-items: center;
 .Chat{
     height: 100%;
     @include modernScrollbar();
+    overflow-y: hidden;
     // background-color: yellowgreen;
     background-color: white;
     li{
@@ -535,18 +391,9 @@ align-items: center;
 
 
     .roomid{
-        // margin-left: auto;
-        // margin-right: 2rem;
         display: flex;
-        // flex-direction: column;
         margin-left: auto;
         margin-right: 1rem;
-        // span:nth-child(2){
-        //     font-weight: 500;
-        //     color: gray;
-        //     margin-left: auto;
-        //     // text-decoration: underline;
-        // }
     }
     .chat-navbar{
         margin:1rem
@@ -557,6 +404,25 @@ align-items: center;
         height: 100%;
         display: flex;
         flex: 1;
+        position: relative;
+        .users-button{
+            position: fixed;
+            left: 0;
+            top: 50%;
+            z-index: 102;
+            padding: 0.2rem 0.7rem;
+            border-radius: 0 0.9rem 0.9rem 0;
+            background-color: white;
+            display: none;
+            cursor: pointer;
+            i{
+             font-size: 3rem;
+             color: $first-color;
+            }
+            &:hover{
+                background-color: grey;
+            }
+        }
         &-part-left{
             display: flex;
             flex-direction: column;
@@ -566,11 +432,9 @@ align-items: center;
             flex: 1;
             &-profile{
                 background-color: $sendMessageInputColor;
-                flex: 0;
                 display: flex;
                 padding:1rem;
                 padding-right: 0;
-                // flex-wrap: wrap;
                 word-break: break-all;
                 align-items: center;
                 font-size: 1.5rem;
@@ -578,7 +442,8 @@ align-items: center;
                     &-img{
                         height: 5rem;
                         width: 5rem;
-                        border-radius: 50%;
+                        border-radius: 100%;
+                        flex-shrink: 0.0000001;
                         overflow:hidden;
                         img{
                             height: auto;
@@ -588,25 +453,12 @@ align-items: center;
                     h4{
                         margin-left: 1rem;
                         flex-basis: 24rem;
+                        font-size: 1.6rem;
                     }
                     span{
-                        // font-size: 2.5rem;
-                        // width: 7rem;
                         margin-left: auto;
-                        // position: relative;
                         cursor: pointer;
-                    //     &::before{
-                    //         content: "•";
-                    //         position: absolute;
-                    //         top:-0.5rem;
-                    //         right: 0;
-                    //      }
-                    //     &::after{
-                    //         content: "•";
-                    //         position: absolute;
-                    //         bottom: -0.5rem;
-                    //         left: 0;
-                    //     }
+                        flex-shrink: 0.00000001;
                     i{
                         font-size: 2rem;
                         margin-left: 1rem;
@@ -640,6 +492,7 @@ align-items: center;
                     }
                     h4{
                         margin-left: 1rem;
+                        font-size: 1.6rem;
                     }
                     &:hover{
                         background-color: $sendMessageInputColor;
@@ -649,8 +502,6 @@ align-items: center;
 
         }
         &-part-right{
-            // border-radius: 1rem;
-            // overflow: hidden;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -671,7 +522,7 @@ align-items: center;
                         display: flex;
                         flex-direction: column;
                         padding: 1rem 5rem 1rem 1rem;
-                        margin: 0.2rem;
+                        margin: 0.4rem 0.1rem;
                         flex-basis: 60%;
                         flex-wrap: wrap;
                         word-wrap: break-word;
@@ -681,13 +532,15 @@ align-items: center;
                         border-radius: 1rem;
                         // margin-left: auto;
                         &-name{
-                            font-size: 1.4rem;
+                            font-size: 1.7rem;
                             // color: rgb(116, 203, 238);
                             color: rgb(250, 117, 168);
                             font-weight: 500;
+                            word-wrap: break-word;
+                            word-break: break-all;
                             }
                         &-text{
-                        font-size: 1.4rem;
+                        font-size: 1.5rem;
                         }
                         .loadedImg{
                             width: 100% !important;
@@ -783,13 +636,45 @@ align-items: center;
 
 }
 
+//ABOUT Section
+.About-page{
+    overflow-y: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+.About{
+    position: relative;
+    height: 90vh;
+}
+.about-heading{
+    font-size: 4rem;
+    margin-top: 3rem;
+}
+#about-footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(0.5rem);
+    left: 0;
+}
+#set-footer-in-about{
+    margin-top: 4vh;
+    color: white;
+    background-color: $first-color;
+    opacity: 65%;
+    font-size: 2rem;
+    width: 80%;
+    padding: 9rem 5rem;
+    border-radius: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
 
 #myMsg{
     margin-left: auto !important;
     background-color: $what-app-color !important;
     p:first-child{
         color: rgb(69, 201, 253);
-        // color: rgb(250, 117, 168);
     }
 }
 
@@ -824,4 +709,82 @@ align-items: center;
         }
     }
 }
+.noscroll{
+    overflow: hidden;
+}
+.navbar-popup-overlay{
+    position: fixed;
+    // top: 2rem;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+   background-color:white;
+   border: 1px solid black;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+   .navbar-child-2{
+     display: flex !important;
+     align-items: flex-start;
+     flex: 2;
+     margin-top: 1rem;
+     cursor: pointer;
+   }
+   .navbar-items{
+     display :flex !important;
+     width: 100%;
+     align-items: center;
+     justify-content: flex-end;
+     flex-direction: column;
+     .navbar-item-cc{
+         margin: 1.5rem;
+         width: 100%;
+         text-align: center;
+         a{
+            cursor: pointer;
+            font-size: 2rem;
+            padding: 0.5rem;
+            color: black;
+            width: 100%;
+            &:hover{
+                padding: 0.5rem;
+                font-size: 2rem;
+                // background-color: rgb(184, 184, 184);
+                // color: $first-color;
+                background-color: $first-color;
+                color: #fff;
+            }
+       }
+     }
+   }
+ }
 
+.showUsers{
+    display: flex !important;
+    position:absolute;
+    background-color: white;
+    width: 60%;
+    z-index: 100;
+}
+.users-temp{
+    position: absolute !important;
+    left: 91% !important;
+    top: 42.5% !important;
+    background-color: grey !important;
+    border-radius: 0.9rem 0 0 0.9rem !important;
+}
+.navbar-popup-overlay-button-onclick{
+background-color: $first-color !important;
+&:before{
+    background-color: $first-color !important;
+}
+&:after{
+    background-color: $first-color !important; 
+}
+}
+
+//for responsiveness
+@import "./responsive";

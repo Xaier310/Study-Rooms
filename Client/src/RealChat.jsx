@@ -13,14 +13,12 @@ function RealChat() {
     curUser,
     curRoomId,
     allParticipants,
-    setAllParticipants,
-    isWD,
-    isAD,
-    isML,
+    setAllParticipants
   } = useContext(AppContext);
 
   const [currMsg, setCurrMsg] = useState("");
   const [msgList, setMsgList] = useState([]);
+  const [isShowUsers,setIsShowUsers] = useState(false);
   var [LocalallParticipants, setLocalallParticipants] = useState([]);
   let history = useHistory();
 
@@ -134,6 +132,19 @@ function RealChat() {
   //     }
   // }
 
+const showUsers = ()=>{
+  var ele = document.querySelector(".users-button");
+  if(ele){
+    setIsShowUsers(!isShowUsers);
+    ele.classList.add("users-temp");
+  }
+}
+window.addEventListener('resize', closePopup);
+function closePopup(){
+  setIsShowUsers(false);
+}
+
+
   return (
     <>
       <div
@@ -145,10 +156,55 @@ function RealChat() {
         }}
       >
         <div className="chat-navbar">
-          <Navbar />
+          <Navbar onClick={closePopup}/>
         </div>
         <h1 className="roomid">ROOM ID : {curRoomId}</h1>
         <main className="main">
+          {!isShowUsers ?
+          (<>
+          <span className="users-button" onClick={showUsers}><i class="fas fa-angle-double-right"></i></span>
+          </>
+          ):(
+          <>
+          <section className="showUsers main-part-left">
+          <span className="users-temp users-button" onClick={showUsers}><i class="fas fa-angle-double-left"></i></span>
+            <div className="main-part-left-profile">
+              <div className="main-part-left-profile-img">
+                <img src={user.picture} alt="" />
+              </div>
+              <h4 className="main-part-left-profile-name">{user.nickname}</h4>
+              <span className="main-part-left-profile-name-setting">
+                <a
+                  onClick={() => {
+                    history.push("/home");
+                    socket.emit("remove_me", curRoomId);
+                  }}
+                >
+                  <i className="fas fa-sign-out-alt"></i>
+                </a>
+              </span>
+            </div>
+            <div className="main-part-left-participants">
+              {LocalallParticipants.map(
+                (user) =>
+                  user.email !== curUser.email && (
+                    <div className="main-part-left-participants-participant-cc">
+                      <img
+                        className="main-part-left-participants-participant-cc-img"
+                        src={user.picture}
+                        alt=""
+                      />
+                      <h4 className="main-part-left-participants-participant-cc-name">
+                        {user.nickname}
+                      </h4>
+                    </div>
+                  )
+              )}
+            </div>
+          </section>
+          </>
+          )
+          }
           <section className="main-part-left">
             <div className="main-part-left-profile">
               <div className="main-part-left-profile-img">
@@ -186,7 +242,7 @@ function RealChat() {
           </section>
           <section className="main-part-right">
             <div className="main-part-right-dm-p">
-              {msgList.map((msg) =>
+              {msgList&&msgList.map((msg) =>
                 curUser.email === msg.username ? (
                   <div className="main-part-right-dm">
                     <div className="main-part-right-dm-msg myMsg" id="myMsg">
@@ -201,7 +257,7 @@ function RealChat() {
                     <span></span>
                   </div>
                 ) : (
-                  <div className="main-part-right-dm">
+                  <div className="main-part-right-dm" onClick={closePopup}>
                     <div className="main-part-right-dm-msg myMsg">
                       <p className="main-part-right-dm-msg-name">
                         {msg.nickname}

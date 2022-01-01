@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { Redirect, Link, NavLink, useHistory } from "react-router-dom";
 // import "./css/Home.css";
-import firstImg from "./images/1.jpg";
+import firstImg from "./images/2.jpg";
 import secondImg from "./images/1.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -13,27 +13,16 @@ const Home = () => {
   const {
     socket,
     curUser,
-    isRoomIdValid,
     setIsRoomIdValid,
-    isLoggedIn,
-    setIsLoggedIn,
     isWD,
     setIsWD,
     isAD,
     setIsAD,
     isML,
     setIsML,
-    curRoomId,
     setCurRoomId,
-    isNewRoom,
-    setIsNewRoom,
-    allParticipants,
-    setAllParticipants,
-    participantsInCR,
-    setparticipantsInCR,
     inputRoomId,
     setInputRoomId,
-    prevRoomId,
     setPrevRoomId,
   } = useContext(AppContext);
   const [noOfPartInCR, setNoOfPartInCR] = useState([0, 0, 0, 0, 0]);
@@ -225,7 +214,7 @@ const Home = () => {
           <section className="main-part-1">
             <div className="main-part-1-left">
               <h1 className="main-part-1-left-heading">
-                You will never study alone again.
+                You will never study alone again create your own rooms.
               </h1>
               <p className="main-part-1-left-para">
                 Join the largest global student community online and say goodbye
@@ -290,18 +279,20 @@ const Home = () => {
                   </div>
                 )}
 
-                <p className="alert"></p>
               </div>
+                <p className="alert"></p>
             </div>
             <div className="main-part-1-right">
-              {/* <img className="main-part-1-right-image" src={firstImg} alt="" /> */}
+              <img className="main-part-1-right-image" src={firstImg} alt="" />
             </div>
           </section>
           <section className="main-part-2">
-            <div className="main-part-2-left">
-              <img className="main-part-2-left-img" src={secondImg} alt="" />
-            </div>
+            {/* <div className="main-part-2-left"> */}
+            {/* </div> */}
             <div className="main-part-2-right" id="rooms">
+              <div className="sec-img">
+            <img className="main-part-2-left-img" src={secondImg} alt="img not available" />
+              </div>
               {(isML || isWD || isAD) && (
                 <div className="no-of-rooms">
                   <div className="no-of-rooms-row">
@@ -327,6 +318,7 @@ const Home = () => {
                   </div>
                 </div>
               )}
+              <div className="main-part-2-right-detail">
               <h1 className="main-part-2-right-heading">
                 Want to have focus on special topics ??
               </h1>
@@ -336,6 +328,7 @@ const Home = () => {
                 rooms on the basis of how many participants are active. All
                 rooms are limited to 15 participants to increase interaction
               </p>
+              </div>
               <div className="main-part-2-right-cards">
                 <div className="main-part-2-right-cards-card-1 main-part-2-right-cards-card-cc">
                   <h1 className="main-part-2-right-cards-card-cc-heading-cc">
@@ -391,8 +384,8 @@ const Home = () => {
           </section>
         </main>
         <footer className="footer"></footer>
-      </div>
       <Footer />
+      </div>
     </>
   );
 };

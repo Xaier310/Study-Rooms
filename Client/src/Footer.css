@@ -1,21 +1,20 @@
+.footer-wrapper li{
+  list-style: none;
+}    
+.footer-wrapper a{
+  text-decoration: none;
+  color: white;
+}
 .footer-wrapper {
-  position: relative;
-  top: 20vh;
-  left: 7vw;
-  /* background-color: rgb(143, 253, 226); */
   background-color: #485461;
   background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
-  border-radius: 1rem;
-  /* height: 300px; */
+  border-radius: 1rem 1rem 0 0;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  margin: 2em;
   padding: 3em !important ;
-  width: 80%;
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
-
-  /* position: relative; */
 }
 
 .footer-wrapper h1 {
@@ -23,50 +22,50 @@
   margin-bottom: 0.3em;
   color: #fff !important;
 }
-.r1 {
+.footer-wrapper .r1 {
   display: flex;
   /* grid-template-columns: repeat(2, 1fr); */
   gap: 2em;
   flex-wrap: wrap;
   grid-area: 1/1 / span 4 / span 4;
 }
-.r1 h3 {
+.footer-wrapper .r1 h3 {
   color: #fff !important;
 }
-.r2 {
+.footer-wrapper .r2 {
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 5/1 / span 1 / span 4;
 }
-.r2 p {
+.footer-wrapper .r2 p {
   font-weight: 600;
   color: #fff !important;
 }
-.r1 {
+.footer-wrapper .r1 {
   align-items: baseline;
   color: #fff !important;
 }
-.contactus-footer {
+.footer-wrapper .contactus-footer {
   display: flex;
   flex-direction: column;
   flex: 2;
 }
-form {
+.footer-wrapper form {
   display: flex;
   /* grid-template-row: repeat(3, 1fr); */
   flex-direction: column;
 }
-.links {
+.footer-wrapper .links {
   flex: 1;
 }
-.links ul {
+.footer-wrapper .links ul {
   display: flex;
   flex-direction: column;
   margin-top: 1em;
   justify-content: space-between;
 }
-.links li {
+.footer-wrapper .links li {
   display: flex;
   flex-direction: column;
   text-transform: capitalize;
@@ -76,7 +75,7 @@ form {
   color: #fff !important;
 }
 
-.username {
+.footer-wrapper .username {
   font-weight: bold;
   width: 15.5rem;
   margin: 0 0 1.25rem;
@@ -90,12 +89,12 @@ form {
   font-size: 1.35rem;
 }
 @media screen and(max-width: 420px) {
-  textarea {
+  .footer-wrapper textarea {
     width: 15rem !important;
   }
 }
 
-textarea {
+.footer-wrapper textarea {
   font-weight: bold;
   margin: 0 0 1.25rem;
   padding: 0.375rem 0.938rem;
@@ -111,7 +110,7 @@ textarea {
   resize: none;
 }
 
-.btn {
+.footer-wrapper .btn {
   font-weight: bold;
   width: 14.375rem;
   margin: 0 0 1.25rem;
@@ -120,11 +119,29 @@ textarea {
   border-radius: 0.313rem;
   outline: none;
   border: none;
-  background: #ee9ba3;
+  /* background: #ee9ba3; */
+  background: #05bfdc; 
   color: white;
   font-size: 1.35rem;
 }
-.signup1 {
+.footer-wrapper li a i{
+  color: white;
+}
+.footer-wrapper li a{
+  color: white !important;
+}
+.footer-wrapper li a:hover i{
+  color: #03a2bb !important;
+}
+.footer-wrapper a:hover{
+  color: #03a2bb !important;
+}
+.footer-wrapper .btn:hover{
+  background: #03a2bb !important; 
+  /* #f08690; */
+  cursor: pointer !important;
+}
+.footer-wrapper .signup1 {
   color: #748194;
   font-size: 1.875rem;
   text-align: center;
@@ -143,4 +160,8 @@ textarea {
   width: 50%; /* Change this to whatever width you want. */
   padding-top: 10px; /* This creates some space between the element and the border. */
   border-bottom: 2px solid #fff; /* This creates the border. Replace black with whatever color you want. */
+}
+
+#copyright{
+  margin-top: 1rem;
 }

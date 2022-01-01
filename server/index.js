@@ -14,14 +14,15 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(__dirname + "/public"));
 const { instrument } = require("@socket.io/admin-ui");
-mongoose.connect(
-  `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@seniorcircle.z5ejt.mongodb.net/ChatBot`,
-  // `mongodb://localhost:27017/ChatBot`,
-  (err) => {
-    if (err) throw err;
-    console.log("DB Connected Successfully");
-  }
-);
+
+// mongoose.connect(
+//   // `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@seniorcircle.z5ejt.mongodb.net/ChatBot`,
+//   `mongodb://localhost:27017/ChatBot`,
+//   (err) => {
+//     if (err) throw err;
+//     console.log("DB Connected Successfully");
+//   }
+// );
 
 app.use("/api/fetchallmsgs", fetchAllMsgsRoute);
 app.use("/api/rooms", roomRoute);
@@ -65,6 +66,9 @@ server.listen(PORT, () => {
     console.log(err);
   }
 });
+app.get("/",(req,res)=>{
+  res.send("Backend is up and running");
+})
 
 var users = [];
 const addUser = (user, socketid) => {

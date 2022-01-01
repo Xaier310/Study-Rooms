@@ -7,10 +7,9 @@ export default function Footer() {
         <div className="links">
           <h1> Important Links</h1>
           <ul>
-            <li>wgnkegnwlkg</li>
-            <li>wgnkegnwlkg</li>
-            <li>wgnkegnwlkg</li>
-            <li>wgnkegnwlkg</li>
+            <li><a href="https://github.com/Xaier310/"><i class="fab fa-github"></i> Github</a></li>
+            <li><a href="https://www.instagram.com/pravish310/"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.facebook.com/pradeep.kr.16568/"><i class="fab fa-facebook"></i> Facebook</a></li>
           </ul>
         </div>
         <div id="contact-us-form" className="contactus-footer">
@@ -35,7 +34,7 @@ export default function Footer() {
       </div>
       <div className="r2">
         <div>
-          <p>Copyright @2021</p>
+          <p id="copyright">© 2021 Studyroom copyright</p>
         </div>
       </div>
     </div>

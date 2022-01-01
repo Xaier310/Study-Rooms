@@ -33,17 +33,17 @@ function randomStr() {
   return ans;
 }
 
-var Rooms = {
-  WebRoom: ["webroom1", "webroom2", "webroom3", "webroom4", "webroom4"],
-  MlRoom: ["mlroom1", "mlroom2", "mlroom3", "mlroom4", "mlroom5"],
-  AndroidRoom: [
-    "androidroom1",
-    "androidroom2",
-    "androidroom3",
-    "androidroom4",
-    "androidroom5",
-  ],
-};
+// var Rooms = {
+//   WebRoom: ["webroom1", "webroom2", "webroom3", "webroom4", "webroom4"],
+//   MlRoom: ["mlroom1", "mlroom2", "mlroom3", "mlroom4", "mlroom5"],
+//   AndroidRoom: [
+//     "androidroom1",
+//     "androidroom2",
+//     "androidroom3",
+//     "androidroom4",
+//     "androidroom5",
+//   ],
+// };
 
 function App() {
   const [curUser, setCurUser] = useState(null);
@@ -59,23 +59,6 @@ function App() {
   const [allParticipants, setAllParticipants] = useState([]);
   const [inputRoomId, setInputRoomId] = useState("");
   const [prevRoomId, setPrevRoomId] = useState("");
-  const [participantsInCR, setparticipantsInCR] = useState({
-    WebRoom: {
-      webroom1: 1,
-      webroom2: 0,
-      webroom3: 0,
-      webroom4: 2,
-      webroom5: 0,
-    },
-    MlRoom: { mlroom1: 6, mlroom2: 9, mlroom3: 0, mlroom4: 0, mlroom5: 0 },
-    AndroidRoom: {
-      androidroom1: 0,
-      androidroom2: 9,
-      androidroom3: 0,
-      androidroom4: 0,
-      androidroom5: 0,
-    },
-  });
 
   useEffect(() => {
     user && setCurUser(user);
@@ -112,8 +95,6 @@ function App() {
         setIsNewRoom,
         allParticipants,
         setAllParticipants,
-        participantsInCR,
-        setparticipantsInCR,
         inputRoomId,
         setInputRoomId,
         prevRoomId,
@@ -132,6 +113,7 @@ function App() {
             component={RealChat}
             isAuthenticated={isAuthenticated}
             curRoomId={curRoomId}
+            isLoading={isLoading}
           />
         </Switch>
       </Router>

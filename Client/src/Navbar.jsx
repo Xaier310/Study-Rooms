@@ -51,7 +51,30 @@ function Navbar() {
     }
   };
 
+const navPopupFn=()=>{
+  let temp = isNavPopup;
+  setIsNavPopup(!isNavPopup);
+  if(!temp){
+    let ele = document.querySelector(".navbar-child-3");
+    if(ele){
+      ele.classList.add("navbar-popup-overlay-button-onclick");
+    }
+    document.getElementById("root").classList.add("noscroll");
+  }
+  else{
+    let ele = document.querySelector(".navbar-child-3");
+    if(ele){
+      ele.classList.remove("navbar-popup-overlay-button-onclick");
+    }
+    document.getElementById("root").classList.remove("noscroll");
+  }
+}
+window.addEventListener('resize', closePopup);
+function closePopup(){
+  setIsNavPopup(false);
+}
   return (
+    <>
     <div className="navbar">
       <div className="navbar-child-1">
         <div className="navbar-logo">
@@ -67,7 +90,8 @@ function Navbar() {
             StudyRooms
           </h4>
         </div>
-        <ul className="navbar-items">
+      </div>
+      <ul className="navbar-items">
           <li className="navbar-item-1 navbar-item-cc">
             <a
               onClick={() => {
@@ -88,22 +112,69 @@ function Navbar() {
                 history.push("/about_us");
               }}
             >
-              About Us
+              About
             </a>
           </li>
           <li className="navbar-item-4 navbar-item-cc">
-            <a href="#contact-us-form">Contact us</a>
+            <a href="#contact-us-form">Contact</a>
           </li>
         </ul>
-      </div>
       <div className="navbar-child-2">
         {!isAuthenticated ? <LoginButton /> : <LogOut />}
       </div>
+      <div className="navbar-child-3" onClick={()=>{
+              navPopupFn();
+      }}></div>
     </div>
+    
+    {isNavPopup&&
+      <div id="navPopup" className="navbar-popup-overlay">
+      <ul className="navbar-items">
+          <li className="navbar-item-1 navbar-item-cc">
+            <a
+              onClick={(e) => {
+                socket.emit("remove_me", curRoomId);
+                history.push("/home");
+                navPopupFn();
+              }}
+            >
+              Home
+            </a>
+          </li>
+          <li className="navbar-item-2 navbar-item-cc">
+            <a onClick={(e)=>{
+              prevChatRoom(e);
+              navPopupFn();}}>lastRoom</a>
+          </li>
+          <li className="navbar-item-3 navbar-item-cc">
+            <a
+              onClick={(e) => {
+                socket.emit("remove_me", curRoomId);
+                history.push("/about_us");
+                navPopupFn();
+              }}
+            >
+              About
+            </a>
+          </li>
+          <li className="navbar-item-4 navbar-item-cc">
+            <a href="#contact-us-form" onClick={(e) => {
+                navPopupFn();
+              }}>Contact</a>
+          </li>
+        </ul>
+      <div className="navbar-child-2" onClick={(e) => {
+                navPopupFn();
+              }}>
+        {!isAuthenticated ? <LoginButton /> : <LogOut />}
+      </div>
+      </div>
+    }
+      </>
   );
   {
     /* <button className="navbar-button">Create Account</button> */
   }
 }
-
+// className="navbar-popup-overlay"
 export default Navbar;
