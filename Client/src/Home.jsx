@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
-import { Redirect, Link, NavLink, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 // import "./css/Home.css";
 import firstImg from "./images/2.jpg";
 import secondImg from "./images/1.jpg";

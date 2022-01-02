@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "./css/Footer.css";
 export default function Footer() {
   return (
     <div className="footer-wrapper">
@@ -7,9 +7,9 @@ export default function Footer() {
         <div className="links">
           <h1> Important Links</h1>
           <ul>
-            <li><a href="https://github.com/Xaier310/"><i class="fab fa-github"></i> Github</a></li>
-            <li><a href="https://www.instagram.com/pravish310/"><i class="fab fa-instagram"></i> Instagram</a></li>
-            <li><a href="https://www.facebook.com/pradeep.kr.16568/"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://github.com/Xaier310/"><i className="fab fa-github"></i> Github</a></li>
+            <li><a href="https://www.instagram.com/pravish310/"><i className="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.facebook.com/pradeep.kr.16568/"><i className="fab fa-facebook"></i> Facebook</a></li>
           </ul>
         </div>
         <div id="contact-us-form" className="contactus-footer">
@@ -23,12 +23,12 @@ export default function Footer() {
               name="Name"
               type="text"
               placeholder="Name*"
-              class="username"
+              className="username"
               id="input"
             />
             <textarea id="input" type="text" placeholder="Message" />
 
-            <button class="btn">Send Message</button>
+            <button className="btn">Send Message</button>
           </form>
         </div>
       </div>

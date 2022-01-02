@@ -42,7 +42,7 @@ const io = new Server(server, {
     origin: [
       "http://localhost:3000",
       "https://admin.socket.io/",
-      "https://tender-nightingale-5fc1df.netlify.app/",
+      "https://studyroomz.netlify.app",
     ],
     methods: ["GET", "POST"],
   },
@@ -153,7 +153,7 @@ io.on("connection", (socket) => {
     if (rooms.has(roomId)) {
       arr = Array.from(rooms.get(roomId));
     }
-    console.log(roomId, arr.length);
+    // console.log(roomId, arr.length);
     io.in(roomId).emit("get_roomUsers", arr);
   });
 
@@ -165,9 +165,9 @@ io.on("connection", (socket) => {
         }
       }
       removeUser(socket.id);
-      console.log("erf ", socket.roomId);
+      // console.log("erf ", socket.roomId);
       if (socket.roomId) {
-        console.log("gfhj : ", users.length);
+        // console.log("gfhj : ", users.length);
         socket.to(socket.roomId).emit("getUsers", users);
       }
     }

@@ -1,4 +1,4 @@
-import React, { Component, useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import LoginButton from "./LoginButton";
 import LogOut from "./LogoutButton";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -9,7 +9,6 @@ import { AppContext } from "./App";
 function Navbar() {
   const {
     prevRoomId,
-    setPrevRoomId,
     socket,
     curUser,
     setCurRoomId,
@@ -82,12 +81,11 @@ function closePopup(){
           <h4
             onClick={() => {
               socket.emit("remove_me", curRoomId);
-              history.push("/home");
+              history.push("/");
             }}
             className="navbar-logo-text"
-            data-aos="fade-zoom-in"
           >
-            StudyRooms
+            StudyRoomz
           </h4>
         </div>
       </div>
@@ -134,7 +132,7 @@ function closePopup(){
             <a
               onClick={(e) => {
                 socket.emit("remove_me", curRoomId);
-                history.push("/home");
+                history.push("/");
                 navPopupFn();
               }}
             >

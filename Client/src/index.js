@@ -5,9 +5,14 @@ import reportWebVitals from "./reportWebVitals";
 import { Auth0Provider } from "@auth0/auth0-react";
 import { BrowserRouter } from 'react-router-dom';
 ReactDOM.render(
+  // <Auth0Provider
+  //   domain="dev-ckl80phv.us.auth0.com"
+  //   clientId="2ZNEOsJgmbkIhZsQMzq9MeW1aNlB80sX"
+  //   redirectUri={window.location.origin}
+  // >
   <Auth0Provider
-    domain="dev-ckl80phv.us.auth0.com"
-    clientId="2ZNEOsJgmbkIhZsQMzq9MeW1aNlB80sX"
+    domain="dev-5z6hgz09.us.auth0.com"
+    clientId="gmDXmQFsq2uj2rhiQrTkcZwzrqGX9Z8o"
     redirectUri={window.location.origin}
   >
     <React.StrictMode>

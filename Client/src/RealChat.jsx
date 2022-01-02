@@ -162,12 +162,12 @@ function closePopup(){
         <main className="main">
           {!isShowUsers ?
           (<>
-          <span className="users-button" onClick={showUsers}><i class="fas fa-angle-double-right"></i></span>
+          <span className="users-button" onClick={showUsers}><i className="fas fa-angle-double-right"></i></span>
           </>
           ):(
           <>
           <section className="showUsers main-part-left">
-          <span className="users-temp users-button" onClick={showUsers}><i class="fas fa-angle-double-left"></i></span>
+          <span className="users-temp users-button" onClick={showUsers}><i className="fas fa-angle-double-left"></i></span>
             <div className="main-part-left-profile">
               <div className="main-part-left-profile-img">
                 <img src={user.picture} alt="" />
@@ -283,6 +283,7 @@ function closePopup(){
                   setCurrMsg(e.target.value);
                 }}
                 type="text"
+                autocomplete="off"
                 placeholder="Type a message"
                 className="main-part-right-msgbox-typemsg"
               />

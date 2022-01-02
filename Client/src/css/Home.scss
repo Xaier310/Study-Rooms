@@ -156,7 +156,7 @@ align-items: center;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
         grid-gap: 2rem;
-        cursor: pointer;
+        // cursor: pointer;
         margin-top: 4rem;
       &-card-cc{
           display: flex;
@@ -661,13 +661,11 @@ align-items: center;
     margin-top: 4vh;
     color: white;
     background-color: $first-color;
-    opacity: 65%;
     font-size: 2rem;
     width: 80%;
     padding: 9rem 5rem;
     border-radius: 5rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 }
 
 #myMsg{
@@ -720,7 +718,10 @@ align-items: center;
     height: 100%;
     width: 50%;
    background-color:white;
-   border: 1px solid black;
+//    border: 1px solid wheat;
+box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+   border-top: none;
+   border-bottom: none;
     z-index: 200;
     display: flex;
     align-items: center;
@@ -729,33 +730,40 @@ align-items: center;
    .navbar-child-2{
      display: flex !important;
      align-items: flex-start;
-     flex: 2;
-     margin-top: 1rem;
+     flex: 1.5;
+     margin-top: 2.5rem;
      cursor: pointer;
    }
    .navbar-items{
      display :flex !important;
-     width: 100%;
+     width: 90%;
      align-items: center;
      justify-content: flex-end;
      flex-direction: column;
      .navbar-item-cc{
-         margin: 1.5rem;
+         margin: 1rem;
          width: 100%;
          text-align: center;
          a{
+             box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
             cursor: pointer;
-            font-size: 2rem;
-            padding: 0.5rem;
-            color: black;
+            font-size: 2.5rem;
+            padding:1.5 0rem;
+            border-radius: 5rem;
             width: 100%;
+            background-color: $first-color;
+            color: #fff;
+            transition: $transition;
             &:hover{
                 padding: 0.5rem;
                 font-size: 2rem;
                 // background-color: rgb(184, 184, 184);
                 // color: $first-color;
-                background-color: $first-color;
-                color: #fff;
+                // background-color: $first-color;
+                background-color: #fff;
+                border: 1px solid $first-color;
+                color: $first-color;
+                box-shadow:none;
             }
        }
      }
@@ -785,6 +793,8 @@ background-color: $first-color !important;
     background-color: $first-color !important; 
 }
 }
+
+
 
 //for responsiveness
 @import "./responsive";
