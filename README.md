@@ -4,6 +4,7 @@ Join the largest global student community online and say goodbye to lack of moti
 
 Joining a virtual study room is just like attending a Video Call, where instead of talking all the participants on the call are studying and motivating each other to do the same.
 
+#### Website : https://studyroomz.netlify.app/
 
 ## Run Locally
 
