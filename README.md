@@ -57,6 +57,8 @@ Install dependencies in frontend
 
 ![App Screenshot](https://raw.githubusercontent.com/Xaier310/NewsArea.github.io/main/public/Screenshot%202022-01-03%20201306.png)
 
+## Mobile View
+
 ![App Screenshot](https://raw.githubusercontent.com/Xaier310/NewsArea.github.io/main/public/Screenshot%202022-01-03%20201403.png)
 
 ![App Screenshot](https://raw.githubusercontent.com/Xaier310/NewsArea.github.io/main/public/Screenshot%202022-01-03%20201424.png)
