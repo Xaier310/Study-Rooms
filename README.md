@@ -49,12 +49,16 @@ Install dependencies in frontend
 
 ## Screenshots
 
-![App Screenshot](https://raw.githubusercontent.com/Xaier310/NewsArea.github.io/main/public/Screenshot%202021-12-10%20030830.png)
+![App Screenshot](https://raw.githubusercontent.com/Xaier310/NewsArea.github.io/main/public/Screenshot%202022-01-03%20201203.png)
 
-![App Screenshot](https://raw.githubusercontent.com/Xaier310/NewsArea.github.io/main/public/Screenshot%202021-12-10%20031519.png)
+![App Screenshot](https://raw.githubusercontent.com/Xaier310/NewsArea.github.io/main/public/Screenshot%202022-01-03%20201251.png)
 
-![App Screenshot](https://raw.githubusercontent.com/Xaier310/NewsArea.github.io/main/public/Screenshot%202021-12-13%20051429.png)
+![App Screenshot](https://raw.githubusercontent.com/Xaier310/NewsArea.github.io/main/public/Screenshot%202022-01-03%20201325.png)
 
-![App Screenshot](https://raw.githubusercontent.com/Xaier310/NewsArea.github.io/main/public/Screenshot%202021-12-13%20051621.png)
+![App Screenshot](https://raw.githubusercontent.com/Xaier310/NewsArea.github.io/main/public/Screenshot%202022-01-03%20201306.png)
 
-![App Screenshot](https://raw.githubusercontent.com/Xaier310/NewsArea.github.io/main/public/Screenshot%202021-12-13%20051803.png)
+![App Screenshot](https://raw.githubusercontent.com/Xaier310/NewsArea.github.io/main/public/Screenshot%202022-01-03%20201403.png)
+
+![App Screenshot](https://raw.githubusercontent.com/Xaier310/NewsArea.github.io/main/public/Screenshot%202022-01-03%20201424.png)
+
+![App Screenshot](https://raw.githubusercontent.com/Xaier310/NewsArea.github.io/main/public/Screenshot%202022-01-03%20201439.png)
