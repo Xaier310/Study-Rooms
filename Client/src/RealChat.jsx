@@ -48,7 +48,6 @@ function RealChat() {
         }
       }
 
-      //   console.log("tempArray : ",tempArray," allParticuipants : ",allParticipants," users : ",users);
       setLocalallParticipants(tempArray);
     });
   }, [allParticipants]);
@@ -299,3 +298,10 @@ function closePopup(){
 }
 
 export default RealChat;
+
+
+
+
+
+
+
